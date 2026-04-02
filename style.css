@@ -1,0 +1,95 @@
+body {
+    background-color:rgba(12, 20, 20, 0.667);
+    font-family: sans-serif;
+}
+.Title  {
+    background-image: url(../images/bg1.jpg);
+    color:rgb(3, 3, 4);
+    text-align: center;
+    padding: 100px;
+    margin: 5px;
+    border:20px solid black;
+    /* transition: all 0.3s ease; */
+
+}
+/* .title:hover{
+  transform: scale(1.03);
+} */
+#heading {
+   background: linear-gradient(to right, #3d3d5f, #43b0eb);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 5px;
+    border: 20px solid black;
+}
+#heading:hover {
+  transform: scale(1.03);
+}
+section {
+    background: linear-gradient(to right, #3d3d5f, #43b0eb);
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border:20px solid black;
+
+   transition: all 0.3s ease;
+}
+section:hover {
+  /* background: linear-gradient(to right, hsla(195, 21%, 32%, 0.845), #00008B); */
+  border-color: #071071;
+  transform: scale(1.03);
+
+}
+p, div, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-style: oblique;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #00BFFF;
+
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;  /* Space inside the button, 12px → top & bottom and 25px → left & right */
+  background-color: rgb(22, 8, 44);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;  /* Removes underline from links */
+  padding: 5px;
+  font-size:small
+
+  transition: background-color 0.3s ease;  /* Controls animation speed when something changes, smooth animation instead of jumping */
+ 
+}
+
+.btn:hover {
+  background-color: #0b8b45;
+  transform: scale(1.03); /* feels interactive (like pressing the real button) */
+  
+}
+span {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px; /* px top & bottom, 10px left & right */
+  background: linear-gradient(to right, #3d3d5f, #43b0eb);
+  color: white;
+  border: color black;
+  border-width: 5px;  /* for bold border to be 5px */
+  border-style: solid; /* for bold border  */
+  border-radius: 10px;
+
+}
+span:hover {
+  transform: scale(1.03);
+
+}
+ 
+
+    
+

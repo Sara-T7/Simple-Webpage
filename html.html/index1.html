@@ -1,0 +1,91 @@
+<!-- 
+Every HTML page starts with a doctype declaration. 
+The doctype’s purpose is to tell the browser what version of HTML it should use to render the document. 
+The latest version of HTML is HTML5, and the doctype for that version is <!DOCTYPE html>.
+- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> practice with odin project</title>
+</head>
+
+<body background="images/bg1.jpg">
+    <div>
+    <h5>hey! <br> Welcome to My page</h5>
+     
+    
+    <!-- to open a link in a new tab, we use target="_blank" in the anchor tag.
+     the noreferrer is Prevents the new tab from accessing the original page, Safer when linking to other websites.
+     noreferrer does the same as noopener,  prevents the browser from sending referrer info (the original page URL) to the new tab. -->
+    <a href="https://youtube.com/shorts/PqWLMSGN3SU?si=qf3Odrg6R6M-B9Il" target="_blank" 
+    rel=" noreferrer noopener">short</a>(open in new tab).<br>
+
+
+    <!--this opens the link on the same page or current page-->
+    <a href="https://youtube.com/shorts/PqWLMSGN3SU?si=qf3Odrg6R6M-B9Il" >my-fault</a>(this opens in this page) <br>
+    <a href="html-code/refer.html" target="_blank">refer</a>  click the link and see what will happen.<br>
+    <a href="sms" target="_blank">sms</a> text<br>
+    </div>
+    <hr>
+    <div>
+    <!-- heading text:-to display larger text.-->
+     <h1> Learning Technology</h1>
+
+    <h2>Introduction</h2>
+     <!-- strong for bold word-->
+    <p>
+        Technology is changing the world every day. As a student, I believe it is 
+        <strong>very important to learn digital skills</strong> in order to succeed 
+        in the modern world. Learning programming can open many opportunities 
+        for young people.
+    </p>
+
+    <h3>Why  Software Engineering</h3>
+    <!--to make text italic-->
+    <p>
+        software engineering  enjoy solving problems and 
+        creating useful tools. It is an exciting field where you can build 
+        applications, websites, and even artificial intelligence systems. 
+        <em>Learning how computers work</em> helps us understand the technology 
+        we use every day.
+    </p>
+    <h4>" popular programming languages are"</h4>
+    <ul>
+        <li>python</li>
+        <li>java</li>
+        <li>javascript...</li>
+
+    </ul>
+    <h4>"ordered list examples"</h4>
+    <ol>
+        <li>first step: learn the basics of programming</li>
+        <li>second step: practice by building projects</li>
+        <li>third step: join online communities and collaborate with others</li>
+</ol>
+</div>
+    <hr>
+<div>
+        <h3>This is a video from my pc</h3>
+    <video width="300px" height="250px" controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        sorry, your browser doesn't support the video tag.
+    </video>
+    <hr>
+    <h3> Pictures from my pc.</h3>
+    <img src="images/pic2.jpg" alt =" beautiful picture" width="250px" height="455px">
+    <img src="images/photo.jpg" alt="Night vibes with computer" width="305px" height="455px"><br>
+    </div>
+    <hr>
+    <div>
+    <h3> If you want to see more interesting pictures here is the link.</h3>
+
+    <a href="html-code/pictures.html" target="_blank">view</a> pictures.
+
+    </div>
+
+    
+    
+</body>
+</html>
