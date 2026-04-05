@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome</title>
     <style>
-        body {
-            background-color: rgba(12, 20, 20, 0.667);
-            font-family: sans-serif;
-        }
-        div {
-            background-color: #b7c9d8;
-            color: black;
-            padding:50px;
-            margin: 5px;  
-         }
-         div:hover{
-            background-color:#353b3f;
-            transform: scale(1.03);
+        body{
+            background: rgb(81, 81, 81);
+            font-family: 'Times New Romans';
             color: white;
-         }
-        p {
-          font-family: 'Times New Roman', Times, serif;
-          font-size: medium;
-          font-style: oblique;
+
         }
-    
-        img {
-            display: block;
-           align-self: center;
-           margin: 0 auto;
-           border-radius: 30px;
+        .box{
+            background: linear-gradient(to right, rgb(7, 152, 152),rgb(34, 34, 224),black,rgb(34, 34, 224),rgb(7, 152, 152));
+            margin: 5px;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
         }
-        .a {
-            background-color:black;
-        }
-        .a:hover {
+        .box:hover{
             transform: scale(1.03);
+        }
+        
+        .d{
+            background-color: #1e1e1e;
+            margin: 5px;
+            padding: 15px;
+            border:1px solid white;
+        }
+        .d p{
+            background: linear-gradient(to right,green, yellow, red);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* text-shadow: 0 0 10px rgba(0,0,0,0.4); */
+            /* display: inline-block; */
+        }
+         .d:hover{
+            transform: scale(1.03);
+         }
+        section {
+         background:black;
+        }
+        
+        p{
+            color:white;
         }
 
+        
     </style>
 </head>
 <body>
-    <div>
-    <h3> <br> hey! <br> WELCOME!<br><br> The previous link leads you here</h3><br>
+    <div class="box">
+    <div> <h3> <br> hey! <br>🌸 WELCOME!🌸<br></h3></div>
+    <div><h3> The previous link leads you here.✨</h3></div>
     </div>
-    <section class="a">
+    <section >
     <img src="../images/Abat.jpg" alt="this pictures shows a prayer in the silence."  
      width="500px" height="500px" > 
     </section>
-    <hr>
-     <div>
+    
+    <div class="d">
         <p>
         Life gets clearer when you stop trying to have everything figured out at once
         focus instead on small, consistent steps in the right direction. 
@@ -63,6 +74,7 @@
 
             </p>
         </div>
+        <br>
 
         
 </body>

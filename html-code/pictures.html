@@ -4,59 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <title>pictures page</title> -->
-     <div id="title" ><h2><em>Pictures From My Pc.</em></h2></div>
+     
     <style>
         body{
-    background-color:rgba(12, 20, 20, 0.667);
-    font-family: times New Roman;
-        }
-        #title{
-            background-color: rgb(5, 5, 108);
-            color: white;
-            margin:5px;
-            padding: 50px;
-            text-align: center;
-        }
-        #title:hover{
-            color: black;
-            background: linear-gradient(to right,aqua, blue);
-            transform: scale(1.03);
+           background-color:rgba(1, 27, 27, 0.667);
+            font-family: times New Roman;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+
         }
         .pictures {
-            background-color: rgb(80, 9, 9);
-            color: white;
-            margin: 5px;
+            background: linear-gradient(to bottom, black,white,white,black,white,white,black,
+            black,black,black,black);
             padding: 40px;
+            border: 6px solid #3d3d5f;
+            flex: 1;
+            
         }
-        .pictures:hover{
-            background:linear-gradient(to bottom,white,black);
-                color: white;
-                transform: scale(1.03);
+        .b{
+          background: rgb(5, 5, 108);
+           border: 4px solid #3d3d5f;
+           text-align: center;
+           flex: 1;
+           color: white;
         }
-        h3{
+          .b:hover{
             background: linear-gradient(to right, rgb(30, 30, 114), rgb(80, 9, 9));
-            color: white;
-            margin:5px;
-            padding: 50px;
-            text-align: center;
-        }
-        h3:hover{
-            color:black;
-            background: linear-gradient(to right,blue,aqua);
             transform:  scale(1.03);
+           }
+           .a{
+            background: linear-gradient(to right, rgb(30, 30, 114), rgb(80, 9, 9));
+            display: flex;
+            padding: 10px;
+            margin: 20px;
+            border: 4px solid rgb(46, 46, 120);
+           justify-content: center;
+            }
+        
+        .a:hover{
+           background: linear-gradient(to right,aqua, blue);
         }
+        .footer{
+            background: linear-gradient(to right, black,white,black,white,black);
+            text-align: center;
+            color: white;
+            border: 1px solid white;
+            padding: 50px;
+
+        }
+        .gallery{
+            background:linear-gradient(to right, rgb(40, 38, 38),black,black,black);
+            display: grid; /* to arrange items in row and columns */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  /* display column, repeat for many column, auto fit(if we add more),
+                                                                          each column at least 280px wide and can grow to fill space (1fr = means "take remaining available space equally") or stretch them evenly-----totally it make the page responsive even for mobile */
+            gap: 2px;
+            padding:10px;
+        }
+        .gallery .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+        .gallery .card img{
+            width: 100%;
+            height: 320px;
+            object-fit: over;
+            transition: 0.5;
+        }
+        .gallery .card:hover img{
+            transform: scale(1.03);
+        }
+        .card p{
+            font-size: 15px;
+            background: linear-gradient(to right,white, rgb(53, 237, 201), white);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gallery .badge{
+           position: absolute;
+           top: 5px;
+           left: 10px;   /* top/left position on card*/
+           padding: 10px 10px;   /* space inside badge*/
+           color: white;
+           font-size: 12px;
+           border-radius: 15px;
+        }
+        .gallery .overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            opacity: 0;     /* Makes the overlay completely invisible at first then on hover 0 → 1 = fade in effect */
+            bottom:0;  /*  Positions the overlay starting from the bottom of the card */
+            transition: 0.5s;
+            display:flex;
+            flex-direction: column;
+            justify-content: end; /* can say flex-end, push to the end of flex direction */
+         }
+         .gallery .card:hover .overlay{
+            opacity: 1;
+         }
+         .gallery .text{
+            padding: 5px;
+         }
+         .gallery .text h3{
+          background: linear-gradient(to right,green, yellow, red,red,red);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; 
+          /* margin: 0;  */
+         }
+
+
     </style>
 </head>
-    <h3> different types of images</h3>
+<body>
+   <div class="b">
+    <div><h2><em>🌸Pictures From My Pc.🌸</em></h2></div>
+    <div class="a"> <h3> different types of images</h3></div>
+   </div>
+
+   <div class="gallery">
+
+    <div class="card">
+        <span class="badge">Start</span>
+        <img src="https://i.pinimg.com/1200x/df/e5/c7/dfe5c7379af849feb84e4db2fad1ea9e.jpg">
+        <div class="overlay">
+            <div class="text">
+                <h3>Start now.</h3>
+                <p>Action beats waiting.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="badge">In progress..</span>
+        <img src="https://i.pinimg.com/736x/d7/23/2d/d7232d86a64ec4aa0d74ba3077702dde.jpg">
+        <div class="overlay">
+            <div class="text">
+                <h3>Never give up.</h3>
+                <p>keep going no matter how hard it gets.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="badge">In progress..</span>
+        <img src="https://i.pinimg.com/1200x/b1/b9/f7/b1b9f7860a061d68709a675fd6daad75.jpg">
+        <div class="overlay">
+            <div class="text">
+                <h3>Stand strong alone.</h3>
+                <p>trust yourself and move forward with courage.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <span class="badge">Done!</span>
+        <img src="https://i.pinimg.com/1200x/5a/c2/82/5ac282ca6e326894e68289abd3c80285.jpg">
+        <div class="overlay">
+            <div class="text">
+                <h3>self-made girl.</h3>
+                <p>achieving your goal is success..</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
     <div class="pictures">
     <img src="../images/p1.png" alt="graduation photo" width="500" height="450">
     <h2> <em>I really</em> <strong> </strong>want</strong></strong> <em>this kind of happiness</em>.</h2>
     <hr>
     <img src="../images/p2.png" alt="a girl with coding." width="500" height="450">
-    <h2>i will be <strong>proud </strong>of <em>myself</em> when i done.</h2><br><br><br>
+    <h2>I will be <strong>proud </strong>of <em>myself</em> once I'm done.</h2><br><br><br>
     <hr>
     <img src="../images/Abat.jpg" alt="this pictures shows a prayer in the silence."  width="400px" height="500px"> 
-    <h2>My dear <strong>GOD</strong> please change my life as every-one says <em>"God did for her"</em>.</h2>
+    <h2>My dear <strong>GOD</strong> please change my life in a way that makes people say, <em>‘This is God’s work in her life.’</em>.</h2>
+</div>
+
+<div class="footer">
+    © 2026 Sara
 </div>
    
     
