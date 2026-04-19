@@ -5,75 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
-            background: rgb(81, 81, 81);
+            background: whitesmoke;
             font-family: 'Times New Romans';
             color: white;
+            position: relative;   
 
         }
         .box{
-            background: linear-gradient(to right, rgb(7, 152, 152),rgb(34, 34, 224),black,rgb(34, 34, 224),rgb(7, 152, 152));
-            margin: 5px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
             padding: 15px 30px;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-        
+             align-items: center;
+             justify-content: space-between;
+             background-color: darkblue;
+             backdrop-filter: blur(280px);
         }
-        .box:hover{
-            transform: scale(1.03);
+        .image{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 40px 20px;
+            margin-top: 120px;
         }
-        
-        .d{
-            background: linear-gradient(to right, rgb(7, 152, 152),rgb(34, 34, 224),black,rgb(34, 34, 224),rgb(7, 152, 152));
-            margin: 5px;
-            padding: 15px;
-            border:1px solid white;
+        .a{
+            margin: 20px;
+           padding: 10px;
+           border-radius: 10px;
+
+           transition: transform 0.3s ease;
+           box-shadow: 6px 3px 10px 10px rgba(7, 0, 94, 0.7);
+           background:rgb(190, 189, 189) ;
         }
-        .d p{
-            background: linear-gradient(to right,white,red, white);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .a:hover{
+            transform: translateY(-4px);
         }
-         .d:hover{
-            transform: scale(1.03);
-         }
-        section {
-         background:black;
-        }
-        
-        p{
-            color:white;
+
+        img{
+            object-fit: cover;
+            border-radius: 28px;
+            width: 100%;
+            height: 800px;
+
         }
 
         
     </style>
 </head>
 <body>
-    <div class="box">
-    <div> <h3> <br> hey! <br>🌸 WELCOME!🌸<br></h3></div>
-    <div><h3> The previous link leads you here.✨</h3></div>
-    </div>
-    <section >
-    <img src="../images/Abat.jpg" alt="this pictures shows a prayer in the silence."  
-     width="500px" height="500px" > 
-    </section>
-    
-    <div class="d">
-        <p>
-        Life gets clearer when you stop trying to have everything figured out at once
-        focus instead on small, consistent steps in the right direction. 
-        Invest in yourself daily, whether through learning, building skills, 
-        or taking care of your health, because those quiet efforts compound over time.
-         Don’t compare your journey to others; people move at different speeds and face different challenges.
-          Be patient with your growth, but also honest with yourself when it’s time to improve or change direction. 
-          Surround yourself with people who support your goals, and don’t be afraid to walk away from what drains you.
-           Most importantly, take action—because even imperfect progress will always teach you more than standing still.
+    <span class="box">
+    <div> <h3> <br> 👋 <br>🌸 WELCOME!🌸<br></h3></div>
+    <div><h3>✨ The previous link leads you here.✨</h3></div>
+    </span>
 
-            </p>
+    <section class="image">
+        <div class="a">
+           <img src="../images/Team.jpg"  > 
         </div>
-        <br>
 
-        
+       <div class="a">
+        <img src="../images/group.jpg" >
+       </div>
+      
+       <div class="a">
+           <img src="../images/be.jpg">
+       </div>
+
+
+        <div class="a">
+           <img src="../images/developer.jpg">
+        </div>
+
+    </section>
+     
 </body>
 </html>

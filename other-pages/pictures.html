@@ -14,28 +14,29 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
 
         }
         .pictures {
-            background: linear-gradient(to bottom, black,white,white,black,white,white,black,
+            background: linear-gradient(to bottom, black,rgb(209, 200, 200),white,black,white,white,black,
             black,black,black,black);
             padding: 40px;
             border: 6px solid #3d3d5f;
             flex: 1;
             
         }
-        .b{
+        .heading{
           background: rgb(5, 5, 108);
            border: 4px solid #3d3d5f;
            text-align: center;
            flex: 1;
            color: white;
         }
-          .b:hover{
+          .heading:hover{
             background: linear-gradient(to right, rgb(30, 30, 114), rgb(80, 9, 9));
-            transform:  scale(1.03);
            }
-           .a{
+           .title{
             background: linear-gradient(to right, rgb(30, 30, 114), rgb(80, 9, 9));
             display: flex;
             padding: 10px;
@@ -43,10 +44,10 @@
             border: 4px solid rgb(46, 46, 120);
            justify-content: center;
             }
-        
-        .a:hover{
+        /*         
+        .title:hover{
            background: linear-gradient(to right,aqua, blue);
-        }
+        } */
         .footer{
             background: linear-gradient(to right, black,white,black,white,black);
             text-align: center;
@@ -56,7 +57,7 @@
 
         }
         .gallery{
-            background:linear-gradient(to right, rgb(40, 38, 38),black,black,black);
+            background: black;
             display: grid; /* to arrange items in row and columns */
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  /* display column, repeat for many column, auto fit(if we add more),
                                                                           each column at least 280px wide and can grow to fill space (1fr = means "take remaining available space equally") or stretch them evenly-----totally it make the page responsive even for mobile */
@@ -64,15 +65,16 @@
             padding:10px;
         }
         .gallery .card {
+            padding: 0 10px;
             position: relative;
             overflow: hidden;
             border-radius: 15px;
         }
         .gallery .card img{
             width: 100%;
-            height: 320px;
+            height: 400px;
             object-fit: over;
-            transition: 0.5;
+            transition: 0.5s;
         }
         .gallery .card:hover img{
             transform: scale(1.03);
@@ -126,16 +128,16 @@
     </style>
 </head>
 <body>
-   <div class="b">
+   <div class="heading">
     <div><h2><em>🌸Pictures From My Pc.🌸</em></h2></div>
-    <div class="a"> <h3> different types of images</h3></div>
+    <div class="title"> <h3> different types of images</h3></div>
    </div>
 
    <div class="gallery">
 
     <div class="card">
         <span class="badge">Start</span>
-        <img src="https://i.pinimg.com/1200x/df/e5/c7/dfe5c7379af849feb84e4db2fad1ea9e.jpg">
+        <img src="../images/start.jpg">
         <div class="overlay">
             <div class="text">
                 <h3>Start now.</h3>
@@ -146,7 +148,7 @@
 
     <div class="card">
         <span class="badge">In progress..</span>
-        <img src="https://i.pinimg.com/736x/d7/23/2d/d7232d86a64ec4aa0d74ba3077702dde.jpg">
+        <img src="../images/inprogress.jpg">
         <div class="overlay">
             <div class="text">
                 <h3>Never give up.</h3>
@@ -157,7 +159,7 @@
 
     <div class="card">
         <span class="badge">In progress..</span>
-        <img src="https://i.pinimg.com/1200x/b1/b9/f7/b1b9f7860a061d68709a675fd6daad75.jpg">
+        <img src="../images/do-more.jpg">
         <div class="overlay">
             <div class="text">
                 <h3>Stand strong alone.</h3>
@@ -168,7 +170,7 @@
 
     <div class="card">
         <span class="badge">Done!</span>
-        <img src="https://i.pinimg.com/1200x/5a/c2/82/5ac282ca6e326894e68289abd3c80285.jpg">
+        <img src="../images/done.jpg">
         <div class="overlay">
             <div class="text">
                 <h3>self-made girl.</h3>
@@ -188,7 +190,7 @@
     <img src="../images/p2.png" alt="a girl with coding." width="500" height="450">
     <h2>I will be <strong>proud </strong>of <em>myself</em> once I'm done.</h2><br><br><br>
     <hr>
-    <img src="../images/Abat.jpg" alt="this pictures shows a prayer in the silence."  width="400px" height="500px"> 
+    <img src="../images/prayer.jpg" alt="this pictures shows a prayer in the silence."  width="400px" height="500px"> 
     <h2>My dear <strong>GOD</strong> please change my life in a way that makes people say, <em>‘This is God’s work in her life.’</em>.</h2>
 </div>
 

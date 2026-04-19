@@ -9,12 +9,15 @@ body {
 }
 .navbar {
   margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
   align-items: center;
  background:#1e293b;
- position: sticky;
+ position: fixed;
 
 }
 .logo {
@@ -36,6 +39,7 @@ body {
 
  }
  .heading {
+  margin: 100px 0px 40px;
   background: linear-gradient(to right, #1e3a8a,black,#06b6d4);
   text-align: center;
   justify-content: center;
@@ -44,13 +48,13 @@ body {
   display: flex;
  }
  .heading:hover {
-  transform: scale(1.03);
-  /* background:linear-gradient(to right, #132e78,#028299); */
+  background: linear-gradient(to right, #274492,rgb(23, 22, 22),#1fc7e5);
  }
  .main {
   display: flex;
   gap:20px;
-  padding: 20px;
+  padding: 50px;
+  margin-bottom: 50px;
 
  flex: 1;
  }
@@ -59,9 +63,6 @@ body {
   background: #3d3d5f;
   padding: 20px;
   margin-right: 5px;
-  }
-  .content:hover{
-    transform: scale(1.03);
   }
 
  .sidebar {
@@ -102,11 +103,10 @@ body {
 }
 
  .footer{
-   /* background:#1e293b; */
    margin-top: 20px;
    padding: 5px 5px;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
   
  }
  .btn{
